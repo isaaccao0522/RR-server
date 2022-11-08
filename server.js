@@ -48,7 +48,7 @@ app.get('/api/keys/paypal', ( req, res) => {
 });
   
 
-const url = process.env.URL
+const port = process.env.PORT
 app.listen ( port, () => {
-  console.log (`serve at ${ url}`);
+  console.log (`serve at http://localhost:${ port}`);
 });
