@@ -31,7 +31,7 @@ userRouter.post ( "/signin",
 );
 
 //Get a user info with different way.
-userRouter.post ( "/reset",
+userRouter.post ( "/forgetpassword",
   expressAsyncHandler ( async ( req, res) => {
     const user = await User.findOne ({ email: req.body.email });
     if ( user) {

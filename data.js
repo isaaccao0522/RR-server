@@ -1,19 +1,4 @@
 import bcrypt from 'bcryptjs';
-//Images
-import aryaDtark from './images/burgers/arya-stark_1.jpg';
-import tyrionLannister from './images/burgers/tyrion-lannister_1.jpg';
-import daenerysTargaryen from './images/burgers/daenerys-targaryen_1.jpg';
-import brienneOfTarth from './images/burgers/brienne-of-tarth_1.jpg';
-import johnSnow from './images/burgers/john-snow_1.jpg';
-import joffreyBaratheon from './images/burgers/joffrey-baratheon_1.jpg';
-import khalDrogo from './images/burgers/khal-drogo_1.jpg';
-import bericDondarrion from './images/burgers/beric-dondarrion_1.jpg';
-import lady from './images/burgers/Lady_1.jpg';
-import ghost from './images/burgers/Ghost_1.jpg';
-import summer from './images/burgers/Summer_1.jpg';
-import nymeria from './images/burgers/Nymeria_1.jpg';
-import melisandre from './images/burgers/Melisandre_1.jpg';
-
 
 const data = {
   users: [
@@ -43,7 +28,7 @@ const data = {
       {
         // _id: "1",
         name: "Arya Stark",
-        image: aryaDtark,
+        image: "https://lh3.googleusercontent.com/pw/AL9nZEWTUTnhpfbohKWODYMnn0eSHVh-noJkQuRznf_rKeuwu_OBn36hosu6Is85zqFLm6O1kaUUpGdzh0prOzEym612GcK2833K28dfTqMmTO6T1DtAnPzEXShVfJZLM5ncJdYhQ2s6_k_PqTwkgytBwSxb=w679-h829-no?authuser=0",
         calorie: 864,
         category: "burgers", 
         price: 100,
@@ -55,7 +40,7 @@ const data = {
       {
         // _id: "2",
         name: "Tyrion Lannister",
-        image: tyrionLannister,
+        image: "https://lh3.googleusercontent.com/pw/AL9nZEVwouD_qZNFYuZeg4L2MztevWM-x0NDa2GxXjyhxduRlCi5SoI4eHMi2K2t-f9CYqPL0e7GgUGfigcDn3ZLaxva8UtZ-2F3A1Xs9KJWPFymHnF3ZQI9oEWQcgxKomic7vbdcdliO7MjZhOqaw_KdSaP=w679-h829-no?authuser=0",
         calorie: 864, 
         category: "burgers",
         price: 110,
@@ -67,7 +52,7 @@ const data = {
       {
         // _id: "3",  
         name: "Daenerys Targaryen",
-        image: daenerysTargaryen,
+        image: "https://lh3.googleusercontent.com/pw/AL9nZEVJn35SMhC9au5vJ8ec_pSUBfjrcV8VtL6-6psKOjobCbB_UwLViOylJfLUdJSNSG_v5jUFNrQIvRWe9iiM5_c-_-5x-ywat_B6T_Mz1q4YAv_me496IWVl7rui9Np1RIGGBE7cUXNecvHBBvG7Eeme=w679-h829-no?authuser=0",
         calorie: 864, 
         category: "burgers",
         price: 120,
@@ -79,7 +64,7 @@ const data = {
       {
         // _id: "4",
         name: "Brienne of Tarth",
-        image: brienneOfTarth ,
+        image: "https://lh3.googleusercontent.com/pw/AL9nZEVAZNLLBEAWegeVsJdcMEGxPmTbl_9yiCFEqD9P6vvH_YNcYj10q-6GKeQ9OShCqRZCam0bGggdADMJAB1YohW44O1RlHErnK2KIcSTC4j6-GR4EJtJtWYoLvXPhxL265i98_QcmD_Gdon6PJCyhCZr=w679-h829-no?authuser=0" ,
         calorie: 864, 
         category: "burgers",
         price: 130,
@@ -91,7 +76,7 @@ const data = {
       {
         // _id: "5",
         name: "John Snow",
-        image: johnSnow,
+        image: "https://lh3.googleusercontent.com/pw/AL9nZEXT2M78NeC22Jkf3_yHQgx_Lk3rffybGRpetYCMu0wU6dGdFRASYBGM5xev180yCwYXw4E6DjqKayp48KE-ewi7VOaoptHTDO5sU-HyAwAYGrxkj8PYp5UVpRyraq8qn1ugWmfaKI28B7widLycrKq-=w679-h829-no?authuser=0",
         calorie: 864, 
         category: "burgers",
         price: 140,
@@ -103,7 +88,7 @@ const data = {
       {
         // _id: "6",
         name: "Joffrey Baratheon",
-        image: joffreyBaratheon ,
+        image: "https://lh3.googleusercontent.com/pw/AL9nZEXQKKy0ZZcXwN2BTXjGQa9lJmjz9Gx4hPmBd-vWfVcyRhG1Wx1CCji9YoxHuNcT95Z9aXZGAayuAXKumVMq1kUjSE9UyDnZ0Vfu1EptB345RmWVQt9irKIwcbGThiYgHHA8bqS1tefh9HrE4JdSb1Jf=w679-h829-no?authuser=0" ,
         calorie: 864,
         category: "burgers", 
         price: 150,
@@ -115,7 +100,7 @@ const data = {
       {
         // _id: "7",
         name: "Khal Drogo",
-        image: khalDrogo,
+        image: "https://lh3.googleusercontent.com/pw/AL9nZEUW4VEDhQtKt2myMsjRfrSdAbsEVhIIUOqSXzaJhadAyZrINxr_sTn66m0ES8gB2Ejxmkm91hzAYXfhj2NUKPW98HipPpId0ffP6EKgW3ZjNsfFJMQGo2nm7dteDpJNEg49NUzABHLnLe4pqe8WJ6az=w679-h829-no?authuser=0",
         calorie: 864, 
         category: "burgers",
         price: 160,
@@ -127,7 +112,7 @@ const data = {
       {
         // _id: "8",
         name: "Beric Dondarrion",
-        image: bericDondarrion,
+        image: "https://lh3.googleusercontent.com/pw/AL9nZEXnBQNJZ1sQDm4YdPTIuo3hfJUu3qbR637bDY-42bppYEFZI2C5QtPjvQZFtrNjLw87adb9kqPM346vwX9iiu5Udtg0NeXmz9mVQ7FqkPeBTTosrMRKnvDlS9NfL_nrLtv5GQEr9KbuEkmqAkd9Rgyh=w679-h829-no?authuser=0",
         calorie: 864, 
         category: "burgers",
         price: 170,
@@ -139,7 +124,7 @@ const data = {
       { 
         // _id: "9",
         name: "Lady",
-        image: lady,
+        image: "https://lh3.googleusercontent.com/pw/AL9nZEVaAK_WL3V-pdit3FtRB8rSORLyGbkKz6sOYgBwG2_wOzpLVLEb1vtI0CsiEVrAlB-9b2oV_QaAE1dFnPtvdYQCVFGg4Gla6ji2bth_3zHaeHLpg_c9qP67fBoWF1gqGkl4OTPGVbrrhpUlnOIWh5ni=w679-h829-no?authuser=0",
         calorie: 300,
         category: "drinks", 
         price: 5,
@@ -151,7 +136,7 @@ const data = {
       {
         // _id: "10",
         name: "Melisandre",
-        image: melisandre,
+        image: "https://lh3.googleusercontent.com/pw/AL9nZEVFgvaMPSRwWy7qtHMiWgKCR2XvtW2r8l0p1dlB0mF--lZ_UYMDqYkbqooRzun2mWHGv8KLuszx0kK5DafonvyqJuGXbSKnncfiB3TwGFQmPbuEuIdh9BZuGSiOFsd3kIGO-7SF9ivrK9ES_oPMZxH-=w679-h829-no?authuser=0",
         calorie: 300,
         category: "drinks", 
         price: 5,
@@ -163,7 +148,7 @@ const data = {
       {
         // _id: "11",
         name: "Summer",
-        image: summer,
+        image: "https://lh3.googleusercontent.com/pw/AL9nZEV5xVQr8X4hfKyMSoWhw7fVjJdqRbyBdsT6uOyWIWFC5VA7TIrdGbNEO9WyEQk7G8QQ50kS3kOCyrTvBCwXR7udtQsBCxpFMozGdhf1bK3G9f4yOdYHMZ5or5RTDgKWGm7NQWV23B5rPuGf810xJQf7=w679-h829-no?authuser=0",
         calorie: 300,
         category: "drinks", 
         price: 6,
@@ -175,7 +160,7 @@ const data = {
       {
         // _id: "12",
         name: "Nymeria",
-        image: nymeria,
+        image: "https://lh3.googleusercontent.com/pw/AL9nZEWEXuJ3E8LjlVYvyertxN3erz1D1QHy1ecoe059qxeih7vY-ZspQCLRmCQLhizJpOL_aofvWNFO1IKDx8G5mCu2FenOnwe_dKvUQx2EVxpRKpJ5YzwfAMHbmA4HikdJxHcNgfh4N1_wWWzGDGDNypSe=w679-h829-no?authuser=0",
         calorie: 300,
         category: "drinks", 
         price: 6,
