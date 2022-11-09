@@ -45,27 +45,3 @@ export const isAdmin = ( req, res, next) => {
   }
 };
 
-//For Facebokk login
-export const generateAccessToken = ( userId) => {
-  return jwt.sign (
-    {
-      userId
-    },
-    process.env.JWT_SECRET,
-    {
-      expiresIn: '30d',
-    }
-  );
-};
-
-export const generateRefreshToken = ( userId) => {
-  return jwt.sign (
-    {
-      userId
-    },
-    process.env.JWT_SECRET,
-    {
-      expiresIn: '7d',
-    }
-  );
-};
