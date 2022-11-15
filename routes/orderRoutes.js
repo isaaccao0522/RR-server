@@ -1,9 +1,11 @@
 import express from  'express';
 import expressAsyncHandler from 'express-async-handler';
+import dotenv from 'dotenv';
 import Order from '../models/orderModel.js';
 import User from '../models/userModel.js';
 import { isAuth, isAdmin } from '../utils.js';
 
+dotenv.config ();
 const orderRouter = express.Router();
 
 
