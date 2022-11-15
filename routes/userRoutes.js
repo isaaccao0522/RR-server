@@ -1,15 +1,15 @@
-import express from 'express';
-import bcrypt from 'bcryptjs';
-import expressAsyncHandler from 'express-async-handler';
-import User from '../models/userModel.js';
-import { isAuth, generateToken } from '../utils.js';
+import express from ( 'express');
+import bcrypt from ( 'bcryptjs');
+import asyncHandler from ( 'express-async-handler');
+import User from ( '../models/userModel.js');
+import { isAuth, generateToken } from ('../utils.js');
 
 
 const userRouter = express.Router ();
 
 //Get a user info.
 userRouter.post ( "/signin",
-  expressAsyncHandler ( async ( req, res) => {
+  asyncHandler ( async ( req, res) => {
     const user = await User.findOne ({ email: req.body.email });
     if ( user) {
       if ( bcrypt.compareSync 
@@ -32,7 +32,7 @@ userRouter.post ( "/signin",
 
 //Get a user info with different way.
 userRouter.post ( "/forgetpassword",
-  expressAsyncHandler ( async ( req, res) => {
+  asyncHandler ( async ( req, res) => {
     const user = await User.findOne ({ email: req.body.email });
     if ( user) {
       if (  req.body.phone === user.phone) {
@@ -53,7 +53,7 @@ userRouter.post ( "/forgetpassword",
 
 //Add a new user info
 userRouter.post ( "/signup",
-  expressAsyncHandler ( async ( req, res) => {
+  asyncHandler ( async ( req, res) => {
     const newUser = new User ({
       name: req.body.name,
       email: req.body.email,
@@ -80,7 +80,7 @@ userRouter.post ( "/signup",
 //Update
 userRouter.put ( "/profile",
   isAuth,
-  expressAsyncHandler ( async ( req, res) => {
+  asyncHandler ( async ( req, res) => {
     const user = await User.findById ( req.user._id);
     if ( user) {
       user.name = req.body.name || user.name;
