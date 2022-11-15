@@ -1,3 +1,4 @@
+dotenv.config ();
 import express from  'express';
 import bcrypt from 'bcryptjs';
 import asyncHandler from 'express-async-handler';
